@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Font Family */
+.open-reg{
+    font-family: 'open-reg';
+}
+.open-semi{
+    font-family: 'open-semi';
+}
+.open-bold{
+    font-family: 'open-bold';
+}
+.open-italic{
+    font-family: 'open-italic';
+}
+.abril{
+    font-family: 'abril';
+}
+
+/* Typography */
+.text-cap{
+    text-transform: capitalize;
+}
+.text-low{
+    text-transform: lowercase;
+}
+.text-up{
+    text-transform: uppercase;
+}
+
+/* Font Size */
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-85{
+    font-size: 85px;
+}
+.fs-60{
+    font-size: 60px;
+}
+.fs-102{
+    font-size: 102px;
+}
+/* ======================
+    Common CSS Ends
+====================== */
+
+/* ======================
+    Font Import Starts
+====================== */
+@font-face {
+    font-family: 'open-reg';
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'open-semi';
+    src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'open-bold';
+    src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'open-italic';
+    src: url(../fonts/OpenSans/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: 'abril';
+    src: url(../fonts/abril/AbrilFatface-Regular.ttf);
+}
+/* ======================
+    Font Import Ends
+====================== */
+
+/* ======================
+    Header Starts
+====================== */
+#header{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+#header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo{
+    padding-top: 30px;
+}
+
+#header ul{
+    display: flex;
+}
+
+#header li{
+    padding-top: 60px;
+    padding-bottom: 8px;
+    margin: 0 20px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#header li:last-child{
+    margin-right: 0;
+}
+
+#header li:hover{
+    background: #d6c6b2;
+}
+
+#header a{
+    color: #222222;
+    text-transform: capitalize;
+    padding: 0 6px;
+}
+/* ======================
+    Header Ends
+====================== */
+
+
+/* ======================
+    Banner Starts
+====================== */
+#banner{
+    height: 620px;
+    background: #e5e8ea;
+}
+
+#banner .container{
+    height: 100%;
+    display: flex;
+}
+
+#banner .banner-person{
+    width: 570px;
+    height: 100%;
+    padding-left: 100px;
+    z-index: 1;
+}
+
+#banner img{
+    height: 100%;
+}
+
+#banner .banner-txt{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 160px;
+    padding-top: 150px;
+}
+#banner .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 100px;
+    margin: 10px 0 30px;
+}
+
+#banner .pos-over{
+    z-index: 2;
+}
+
+#banner .banner-button{
+    z-index: 2;
+}
+
+#banner .banner-btn{
+    line-height: 40px;
+    border: 1px solid #d6c6b2;
+    background: transparent;
+    color: #d6c6b2;
+}
+
+#banner .btn a{
+    padding: 10px 40px;
+}
+
+#banner a{
+    padding: 10px 20px;
+    color: #d6c6b2;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#banner a:hover{
+    background: #d6c6b2;
+    color: #222222;
+}
+
+#banner .btn{
+    margin-right: 18px;
+}
+/* ======================
+    Banner Ends
+====================== */
+
+
+
+/* ======================
+    About Starts
+====================== */
+#about{
+    height: 525px;
+    background: rgb(68, 99, 128);
+}
+
+#about .about-person{
+    height: 100%;
+    background: #c78d8d;
+    display: flex;
+    justify-content: space-between;
+}
+#about .person-img{
+    height: 100%;
+    width: 470px;
+    background: #c6df3c;
+    position: relative;
+}
+
+#about .img-bg img{
+    height: 525px;
+    width: 100%;
+}
+
+#about .main-img{
+    position: absolute;
+    bottom: 0;
+    height: 525px;
+}
+
+#about .main-img img{
+    height: 525px;
+}
+
+#about .person-txt{
+    height: 100%;
+    width: 670px;
+    background: #38ad94;
+    color: #222222;
+}
+
+#about p{
+    line-height: 24px;
+    color: #444444;
+}
+
+#about .para-1{
+    margin: 55px 0 30px 0;
+}
+
+#about .mrgn{
+    margin: 55px 0 30px 0;
+}
+
+#about{}
+#about{}
+/* ======================
+    About Ends
+====================== */
+
+
+/* ======================
+     Starts
+====================== */
+/* ======================
+     Ends
+====================== */
