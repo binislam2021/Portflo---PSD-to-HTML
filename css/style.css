@@ -164,6 +164,13 @@ img{
 #banner{
     height: 620px;
     background: #e5e8ea;
+    position: relative;
+}
+
+#particles-js{
+    position: absolute;
+    inset: 0;
+    z-index: 5;
 }
 
 #banner .container{
