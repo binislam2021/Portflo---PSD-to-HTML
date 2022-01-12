@@ -366,11 +366,33 @@ img{
 
 #service .container{
     height: 100%;
-    background: rgba(241, 8, 8, 0.7);
+}
+
+#service h3{
+    padding: 50px 0 60px 0;
+}
+
+#service .service-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service .service-details{
+    width: 360px;
+}
+
+#service h5{
+    padding: 25px 0;
+}
+
+#service p{
+    line-height: 24px;
+    padding-bottom: 55px;
 }
 
 #service .service-alter{
     display: flex;
+    justify-content: center;
 }
 
 #service .circle{
@@ -378,25 +400,45 @@ img{
     border: 1px solid #444444;
     width: 30px;
     height: 30px;
+    cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    position: relative;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
 }
 
-#service .fa-circle{
-    font-size: 30px;
+#service .circle:hover{
+    background: #d6c6b2;
+    border: 1px solid #d6c6b2;
 }
 
-#service{}
-#service{}
-#service{}
-#service{}
-#service{}
-#service{}
+#service .fa-long-arrow-alt-left{
+    position: absolute;
+    right: 15px;
+}
+
+#service .fa-long-arrow-alt-right{
+    position: absolute;
+    left: 15px;
+}
 /* ======================
     Service Ends
+====================== */
+
+
+/* ======================
+    Portfolio Starts
+====================== */
+
+/* ======================
+    Portfolio Ends
 ====================== */
 
 
