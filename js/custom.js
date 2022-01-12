@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    var typed = new Typed('.pos-over', {
+
+  var typed = new Typed('.pos-over ', {
+
         strings: ["michalvina"],
-        typeSpeed: 100,
         loop: 'true',
-        showCursor: false,
+        startDelay: 1000,
+        typeSpeed: 100,
+        backSpeed: 100,
       });
 });

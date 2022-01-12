@@ -44,6 +44,9 @@ img{
 .text-up{
     text-transform: uppercase;
 }
+.text-center{
+    text-align: center;
+}
 
 /* Font Size */
 .fs-14{
@@ -61,11 +64,11 @@ img{
 .fs-24{
     font-size: 24px;
 }
-.fs-32{
-    font-size: 32px;
-}
 .fs-30{
     font-size: 30px;
+}
+.fs-32{
+    font-size: 32px;
 }
 .fs-85{
     font-size: 85px;
@@ -75,6 +78,14 @@ img{
 }
 .fs-102{
     font-size: 102px;
+}
+
+/* Colors */
+.colr-4{
+    color: #444444;
+}
+.colr-2{
+    color: #222222;
 }
 /* ======================
     Common CSS Ends
@@ -149,7 +160,6 @@ img{
 }
 
 #header a{
-    color: #222222;
     text-transform: capitalize;
     padding: 0 6px;
 }
@@ -198,6 +208,7 @@ img{
     align-items: flex-end;
     padding-right: 160px;
     padding-top: 150px;
+    /* z-index: 6; */
 }
 #banner .name{
     display: flex;
@@ -207,12 +218,16 @@ img{
     margin: 10px 0 30px;
 }
 
+#banner .typed-cursor{
+    color: aqua;
+}
+
 #banner .pos-over{
     z-index: 2;
 }
 
 #banner .banner-button{
-    z-index: 2;
+    z-index: 6;
 }
 
 #banner .banner-btn{
@@ -282,12 +297,10 @@ img{
 #about .person-txt{
     height: 100%;
     width: 670px;
-    color: #222222;
 }
 
 #about p{
     line-height: 24px;
-    color: #444444;
 }
 
 #about .para-1{
@@ -302,7 +315,6 @@ img{
     display: flex;
 }
 #about li{
-    text-align: center;
     line-height: 40px;
     border: 1px solid rgba(68, 68, 68, 0.5);
     border-radius: 50%;
@@ -330,7 +342,6 @@ img{
 }
 
 #about a{
-    color: #444444;
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -342,6 +353,50 @@ img{
 }
 /* ======================
     About Ends
+====================== */
+
+
+/* ======================
+    Service Starts
+====================== */
+#service{
+    height: 560px;
+    background: radial-gradient(#f5f5f5, #f9f9f9);
+}
+
+#service .container{
+    height: 100%;
+    background: rgba(241, 8, 8, 0.7);
+}
+
+#service .service-alter{
+    display: flex;
+}
+
+#service .circle{
+    margin: 0 10px;
+    border: 1px solid #444444;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#service .fa-circle{
+    font-size: 30px;
+}
+
+#service{}
+#service{}
+#service{}
+#service{}
+#service{}
+#service{}
+/* ======================
+    Service Ends
 ====================== */
 
 
