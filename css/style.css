@@ -1008,6 +1008,101 @@ body{
 /* ======================
     Footer Starts
 ====================== */
+#footer{
+    height: 385px;
+    background: #0b99b3;
+}
+
+#footer .footer-top{
+    height: 300px;
+    background: #1ed60d;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .address-part{
+    width: 330px;
+    background: rgb(18, 231, 238);
+}
+
+#footer h4{
+    margin-bottom: 30px;
+}
+
+#footer address{
+    display: flex;
+    background: rgb(219, 173, 173);
+}
+
+#footer i{
+    line-height: 24px;
+    padding-right: 15px;
+}
+
+#footer .mail{
+    display: flex;
+    background: rgb(123, 211, 64);
+    margin: 15px 0;
+}
+
+#footer .web{
+    display: flex;
+    background: rgb(177, 216, 152);
+}
+
+#footer .mt-50{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+#footer ul{
+    display: flex;
+}
+
+#footer i{
+    text-align: center;
+}
+
+#footer ul a{
+    color: #444444;
+    font-size: 20px;
+    padding-right: 30px;
+    line-height: 50px;
+    background: #000;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#footer ul a:hover{
+    background: #d6c6b2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#footer .form-part{
+    width: 770px;
+    background: rgb(211, 206, 131);
+}
+#footer{}
+#footer{}
+#footer{}
+#footer{}
+#footer{}
+
+
+#footer .footer-bottom{
+    line-height: 55px;
+}
 /* ======================
     Footer Ends
 ====================== */
