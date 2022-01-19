@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - PSD to HTML</title>
+
+    <!--============ Font Awesome CSS ============-->
     <link rel="stylesheet" href="css/all.min.css">
+    
+    <!--============ Main/Custom CSS ============-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <!--============ Header Starts ============-->
     <section id="header">
-        <header class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="fs-20 open-semi">
+                        <li><a href="#" class="colr-4">home</a></li>
+                        <li><a href="#" class="colr-4">about
+                            <span class="text-low">me</span>
+                        </a></li>
+                        <li><a href="#" class="colr-4">portfolio</a></li>
+                        <li><a href="#" class="colr-4">my blog</a></li>
+                        <li><a href="#" class="colr-4">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="fs-20 open-semi">
-                    <li><a href="#" class="colr-4">home</a></li>
-                    <li><a href="#" class="colr-4">about
-                        <span class="text-low">me</span>
-                    </a></li>
-                    <li><a href="#" class="colr-4">portfolio</a></li>
-                    <li><a href="#" class="colr-4">my blog</a></li>
-                    <li><a href="#" class="colr-4">contact</a></li>
-                </ul>
-            </nav>
         </header>
     </section>
     <!--============ Header Ends ============-->
@@ -601,18 +606,18 @@
                 <h4 class="abril fs-20 colr-2 text-cap">get <span class="text-low">in</span> touch
                 </h4>
                 <address>
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt p-right-15"></i>
                     <p class="open-reg colr-4 fs-18">1234, parkstreet avenue. america.</p>
                 </address>
                 <div class="mail">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope p-right-15"></i>
                     <p class="open-reg colr-4 fs-18">portfolio@personalportfolio.com</p>
                 </div>
-                <div class="fs-20">
-                    <i class="fas fa-globe"></i>
+                <div class="web fs-20">
+                    <i class="fas fa-globe p-right-15"></i>
                     <p class="open-reg colr-4 fs-18">www.portfoliopersonal.com</p>
                 </div>
-                <h4 class="abril fs-20 colr-2 text-cap mt-50">
+                <h4 class="abril fs-20 colr-2 text-cap mr">
                     fllow me
                 </h4>
                 <ul>
@@ -633,10 +638,24 @@
                     </a></li>
                 </ul>
             </div>
-            <!-- <div class="form-part"></div> -->
+            <div class="form-part">
+                <h5 class="open-semi text-cap fs20 colr-2">message me</h5>
+                <form>
+                    <div class="input">
+                        <input type="text" placeholder="your name" class="text-cap open-italic fs-14">
+                        <input type="text" class="text-cap open-italic fs-14" placeholder="your e-mail">
+                    </div>
+                    <textarea rows="9" class="open-italic text-cap" placeholder="message"></textarea>
+                    <div class="submit">
+                        <img src="images/submit-bg.png" alt="Submit-bg image">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane fs-18" type="submit"></i>
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
         </div>
-
-        
         <div class="footer-bottom bg-d">
             <div class="container text-center text-cap open-reg fs-14 colr-4">copyright 2022. all 
                 <span class="text-low"> rights reserved by
@@ -647,11 +666,13 @@
     </footer>
     <!--============ Footer Ends ============-->
 
+    <!--============ jQuery Start ============-->
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/custom.js"></script>
+    <!--============ jQuery Scripts End ============-->
     
 </body>
 </html>

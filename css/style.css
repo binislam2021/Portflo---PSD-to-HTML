@@ -146,9 +146,15 @@ body{
     Header Starts
 ====================== */
 #header{
-    position: absolute;
     width: 100%;
+    position: absolute;
     z-index: 9;
+}
+
+#header .nav-fixed{
+    position: fixed;
+    width: 100%;
+    background: #e5e8ea;
 }
 
 #header .container{
@@ -1010,12 +1016,10 @@ body{
 ====================== */
 #footer{
     height: 385px;
-    background: #0b99b3;
 }
 
 #footer .footer-top{
     height: 300px;
-    background: #1ed60d;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -1023,7 +1027,6 @@ body{
 
 #footer .address-part{
     width: 330px;
-    background: rgb(18, 231, 238);
 }
 
 #footer h4{
@@ -1032,47 +1035,39 @@ body{
 
 #footer address{
     display: flex;
-    background: rgb(219, 173, 173);
 }
 
-#footer i{
+#footer .p-right-15{
     line-height: 24px;
     padding-right: 15px;
 }
 
 #footer .mail{
     display: flex;
-    background: rgb(123, 211, 64);
     margin: 15px 0;
 }
 
 #footer .web{
     display: flex;
-    background: rgb(177, 216, 152);
 }
 
-#footer .mt-50{
+#footer .mr{
     margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 #footer ul{
     display: flex;
 }
 
-#footer i{
-    text-align: center;
-}
-
 #footer ul a{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
     color: #444444;
     font-size: 20px;
-    padding-right: 30px;
-    line-height: 50px;
-    background: #000;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
     transition: all linear 0.4s;
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
@@ -1081,7 +1076,8 @@ body{
 }
 
 #footer ul a:hover{
-    background: #d6c6b2;
+    background:#d6c6b2;
+    color: #ffffff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1091,14 +1087,72 @@ body{
 
 #footer .form-part{
     width: 770px;
-    background: rgb(211, 206, 131);
+    background: #f1f1f1;
+    padding: 30px;
+    box-shadow: 0px 0px 25px -20px;
 }
-#footer{}
-#footer{}
-#footer{}
-#footer{}
-#footer{}
 
+#footer h5{
+    margin-bottom: 30px;
+}
+
+#footer .input{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer input{
+    width: 350px;
+    line-height: 30px;
+    border: 1px solid #dddddd;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#footer input:focus{
+    border: 1px solid #d6c6b2;
+}
+
+#footer textarea{
+    width: 100%;
+    border: 1px solid #dddddd;
+    outline: none;
+}
+
+#footer textarea:focus{
+    border: 1px solid #d6c6b2;
+}
+
+#footer .submit{
+    position: relative;
+}
+
+#footer img{
+    position: absolute;
+    right: 0;
+    bottom: 23px;
+}
+
+#footer .submit i{
+    position: absolute;
+    right: 12px;
+    bottom: 35px;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#footer .submit i:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    bottom: 38px;
+}
 
 #footer .footer-bottom{
     line-height: 55px;
