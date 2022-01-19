@@ -1,9 +1,10 @@
 $(document).ready(function(){
   
-  // type JSon the Banner Part //
+  // Nav fixed after scrolling a way
   $(window).scroll(function(){
-    
+
     var scrolling = $(this).scrollTop();
+
     if (scrolling > 200){
       $('header').addClass('nav-fixed');
     }else{
@@ -11,7 +12,10 @@ $(document).ready(function(){
     }
   });
 
-  // type JS  plugin added on the Banner Part //
+  // Tilt JS
+  $('.js-tilt').tilt({
+    scale: 1.1
+  });
 
   // type JS on the Banner //
   var typed = new Typed('.pos-over', {
@@ -23,7 +27,6 @@ $(document).ready(function(){
         backSpeed: 50,
         backDelay: 1000,
       });
-  // =============type JS Ends============= //
 
   // Active class jQuery added on the nav bar in portfolio //
       $('#portfolio li').on('click', function(){
