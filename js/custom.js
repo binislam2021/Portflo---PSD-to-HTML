@@ -12,26 +12,31 @@ $(document).ready(function(){
     }
   });
 
-  // Tilt JS
-  $('.js-tilt').tilt({
-    scale: 1.1
-  });
-
-  // type JS on the Banner //
+  // type JS on the Banner
   var typed = new Typed('.pos-over', {
 
-        strings: ["michalvina"],
-        loop: 'true',
-        startDelay: 1000,
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 1000,
-      });
+    strings: ["michalvina"],
+    loop: 'true',
+    startDelay: 1000,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1000,
+  });
 
-  // Active class jQuery added on the nav bar in portfolio //
+    // Tilt JS in About
+    $('.js-tilt').tilt({
+      scale: 1.05
+    });
+
+// wow JS
+  new WOW().init();
+
+  // Slick Slider in Service
+  // $('.service-item').slick();
+
+  // Add & Remove Class in Portfolio Part
       $('#portfolio li').on('click', function(){
         $(this).addClass('active').siblings().removeClass('active');
       });
-  // =============Adding class Ends============= //
 
 });
