@@ -405,11 +405,53 @@ body{
 #service .service-item{
     display: flex;
     justify-content: space-between;
+
 }
+
+/* #service img{
+    margin: 0 auto;
+} */
+
+/* #service .slick-slide{
+    padding: 0 20px;
+} */
 
 #service .service-details{
     width: 360px;
+    padding: 0 15px;
 }
+
+#service img{
+    display: inline;
+}
+
+#service h5 {
+    padding: 25px 0;
+}
+
+
+/* #service .service-details img{
+    margin: 0 auto;
+} */
+
+
+=====================================
+
+/* #service .service-item .slick-slide{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#service .service-details{
+    width: 360px;   
+}
+
+#service .service-details img{
+    margin: 0 auto;
+} */
+
+====================================
 
 #service h5{
     padding: 25px 0;

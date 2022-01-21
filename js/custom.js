@@ -32,7 +32,12 @@ $(document).ready(function(){
   new WOW().init();
 
   // Slick Slider in Service
-  // $('.service-item').slick();
+  $('.service-item').slick({
+    // autoplay: true,
+    slidesToShow: 3,
+    arrows: false,
+    dots: true,
+  });
 
   // Add & Remove Class in Portfolio Part
       $('#portfolio li').on('click', function(){
