@@ -36,7 +36,6 @@ $(document).ready(function(){
     // autoplay: true,
     slidesToShow: 3,
     arrows: false,
-    dots: true,
   });
 
   // Add & Remove Class in Portfolio Part
