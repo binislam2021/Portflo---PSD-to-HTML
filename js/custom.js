@@ -31,12 +31,13 @@ $(document).ready(function(){
 // wow JS
   new WOW().init();
 
-  // Slick Slider in Service
-  $('.service-item').slick({
-    // autoplay: true,
-    slidesToShow: 3,
-    arrows: false,
-  });
+// Slick Slider in Service
+$('.service-item').slick({
+  slidesToShow: 3,
+  autoplay: true,
+  prevArrow: '<i class="far fa-circle circle-left wowo animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-left arrow-left"></i></i>',
+  nextArrow: '<i class="far fa-circle circle-right wow animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-right arrow-right"></i></i>',
+});
 
   // Add & Remove Class in Portfolio Part
       $('#portfolio li').on('click', function(){

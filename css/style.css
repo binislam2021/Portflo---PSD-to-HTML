@@ -385,7 +385,6 @@ body{
     About Ends
 ====================== */
 
-
 /* ======================
     Service Starts
 ====================== */
@@ -402,59 +401,16 @@ body{
     padding: 50px 0 60px 0;
 }
 
-#service .service-item{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-/* #service img{
-    margin: 0 auto;
-} */
-
-/* #service .slick-slide{
-    padding: 0 20px;
-} */
-
-#service .service-details{
-    width: 360px;
+#service .slick-slide{
     padding: 0 15px;
-}
-
-#service img{
-    display: inline;
 }
 
 #service h5 {
     padding: 25px 0;
 }
 
-
-/* #service .service-details img{
-    margin: 0 auto;
-} */
-
-
-=====================================
-
-/* #service .service-item .slick-slide{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-#service .service-details{
-    width: 360px;   
-}
-
 #service .service-details img{
     margin: 0 auto;
-} */
-
-====================================
-
-#service h5{
-    padding: 25px 0;
 }
 
 #service p{
@@ -462,23 +418,34 @@ body{
     padding-bottom: 55px;
 }
 
-#service .service-alter{
-    display: flex;
-    justify-content: center;
+#service .slick-item{
+    position: relative;
 }
 
-#service .circle{
-    margin: 0 10px;
-    border: 1px solid #444444;
+#service .circle-left{
+    font-size: 28px;
     width: 30px;
     height: 30px;
+    font-size: 0;
+    border: 1px solid #444444;
+    color:#444444;
+    line-height: 40px;
+    text-align: center;
     cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    margin-right: 5px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    position: relative;
     transition: all linear 0.4s;
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
@@ -486,19 +453,57 @@ body{
     -o-transition: all linear 0.4s;
 }
 
-#service .circle:hover{
-    background: #d6c6b2;
+#service .circle-left:hover{
+    background:#d6c6b2;
     border: 1px solid #d6c6b2;
 }
 
-#service .fa-long-arrow-alt-left{
+#service .arrow-left {
     position: absolute;
-    right: 15px;
+    left: -15px;
+    font-size: 30px;
 }
 
-#service .fa-long-arrow-alt-right{
+#service .circle-right{
+    font-size: 28px;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border: 1px solid #444444;
+    color:#444444;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
     position: absolute;
-    left: 15px;
+    bottom: -50px;
+    left: 52%;
+    margin-left: 5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#service .circle-right:hover{
+    background:#d6c6b2;
+    border: 1px solid #d6c6b2;
+}
+
+#service .arrow-right {
+    position: absolute;
+    right: -15px;
+    font-size: 30px;
 }
 /* ======================
     Service Ends
