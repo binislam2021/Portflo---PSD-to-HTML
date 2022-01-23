@@ -39,6 +39,12 @@ $('.service-item').slick({
   nextArrow: '<i class="far fa-circle circle-right wow animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-right arrow-right"></i></i>',
 });
 
+// Counter Up js in blog
+  $('.counter').counterUp({
+    delay: 1,
+    time: 2000,
+  });
+
   // Add & Remove Class in Portfolio Part
       $('#portfolio li').on('click', function(){
         $(this).addClass('active').siblings().removeClass('active');
