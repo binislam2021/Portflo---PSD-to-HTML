@@ -23,13 +23,23 @@ $(document).ready(function(){
     backDelay: 1000,
   });
 
+  // wow JS
+  new WOW().init();
+
     // Tilt JS in About
     $('.js-tilt').tilt({
       scale: 1.05
     });
 
-// wow JS
-  new WOW().init();
+    // Count Down js in wish
+  $('#countdown').countdown({
+    year: 2023,
+    month: 1,
+    day: 1,
+    hour: 0,
+    minute: 0,
+    second: 0,
+  });
 
 // Slick Slider in Service
 $('.service-item').slick({
@@ -44,6 +54,7 @@ $('.service-item').slick({
     delay: 1,
     time: 2000,
   });
+
 
   // Add & Remove Class in Portfolio Part
       $('#portfolio li').on('click', function(){
