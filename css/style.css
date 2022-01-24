@@ -419,6 +419,7 @@ body{
 
 #wish .time{
     font-size: 72px;
+    text-shadow: 5px 5px 2px rgba(8, 8, 8, 0.3);
 }
 
 #wish .label{
