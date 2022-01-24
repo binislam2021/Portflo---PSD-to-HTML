@@ -49,6 +49,17 @@ $('.service-item').slick({
   nextArrow: '<i class="far fa-circle circle-right wow animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-right arrow-right"></i></i>',
 });
 
+
+
+  // AOS js in portfolio
+  AOS.init();
+
+  // Mixit up in portfolio
+  var mixer = mixitup('.port-images');
+
+  // Parallax bg js in testimonial
+  $('#testimonial').parallax({imageSrc:'images/testimonial-bg.jpg'});
+
 // Counter Up js in blog
   $('.counter').counterUp({
     delay: 1,
@@ -57,8 +68,7 @@ $('.service-item').slick({
 
 
   // Add & Remove Class in Portfolio Part
-      $('#portfolio li').on('click', function(){
-        $(this).addClass('active').siblings().removeClass('active');
-      });
-
+       $('.active').on('click', function(){
+         $(this).addClass('active').siblings().removeClass('active');
+       });
 });

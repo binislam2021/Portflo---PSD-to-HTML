@@ -15,6 +15,9 @@
     <!--============ Animation CSS ============-->
     <link rel="stylesheet" href="css/slick.css">
 
+    <!--============ Aos CSS ============-->
+    <link rel="stylesheet" href="css/aos.css">
+    
     <!--============ Main/Custom CSS ============-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -119,7 +122,7 @@
     <div id="wish" class="abril colr-2">
         <div class="container">
             <div class="section-head mb-50">
-                <h3 class="abril fs-32 text-cap text-center colr-2 wow animate__animated animate__fadeInDown">InshaAllah become in</h3>
+                <h3 class="abril fs-32 text-cap text-center colr-2 wow animate__animated animate__fadeInDown">InshaAllah <br> <span class="open-reg fs-16 colr-6">I'll become a full stack web developer in</span></h3>
             </div>
             <div id="countdown" class="animate__animated animate__flip animate__slow animate__delay-1s wow"></div>
         </div>
@@ -179,9 +182,9 @@
     <section id="portfolio">
         <div class="container">
             <div class="port-items">
-                <div class="port-images">
+                <div class="port-images" data-aos="flip-right" data-aos-delay="300" data-aos-duration="2000">
 
-                    <div class="img-item">
+                    <div class="img-item mix graphic illustration">
                         <img src="images/port-img1.jpg" alt="Portfolio Image 01">
                         <div class="overlay">
                             <d iv class="overlay-property open-semi text-cap colr-2">
@@ -194,7 +197,7 @@
                         </div>
                     </div>
 
-                    <div class="img-item">
+                    <div class="img-item mix web">
                         <img src="images/port-img2.jpg" alt="Portfolio Image 02">
                         <div class="overlay">
                             <d iv class="overlay-property open-semi text-cap colr-2">
@@ -207,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="img-item">
+                    <div class="img-item mix app">
                         <img src="images/port-img3.jpg" alt="Portfolio Image 03">
                         <div class="overlay">
                             <d iv class="overlay-property open-semi text-cap colr-2">
@@ -220,7 +223,7 @@
                         </div>
                     </div>
 
-                    <div class="img-item">
+                    <div class="img-item mix brand logo">
                         <img src="images/port-img4.jpg" alt="Portfolio Image 04">
                         <div class="overlay">
                             <d iv class="overlay-property open-semi text-cap colr-2">
@@ -239,23 +242,23 @@
                     </a>
                 </div>
             </div>
-            <div class="port-nav">
+            <div class="port-nav" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="2000">
                 <h3 class="text-cap abril fs-32 colr-2">my portfolio</h3>
                 <ul class="text-cap open-semi fs-20 colr-4 gl-list">
-                    <li class="active">all</li>
-                    <li>web template</li>
-                    <li>logo design</li>
-                    <li>illustration</li>
-                    <li>brand identity</li>
-                    <li>motion grphics</li>
-                    <li>app design</li>
+                    <li class="mixitup-control-active" data-filter="all">all</li>
+                    <li data-filter=".web">web template</li>
+                    <li data-filter=".logo">logo design</li>
+                    <li data-filter=".illustration">illustration</li>
+                    <li data-filter=".brand">brand identity</li>
+                    <li data-filter=".graphic">motion grphics</li>
+                    <li data-filter=".app">app design</li>
                 </ul>
             </div>
         </div>
     </section>
     <!--============ Portfolio Ends ============-->
 
-
+    
     <!--============ Testimonial Starts ============-->
     <div id="testimonial">
         <div class="container">
@@ -630,10 +633,10 @@
                     <i class="fas fa-map-marker-alt p-right-15"></i>
                     <p class="open-reg colr-4 fs-18">1234, parkstreet avenue. america.</p>
                 </address>
-                <div class="mail">
-                    <i class="fas fa-envelope p-right-15"></i>
-                    <p class="open-reg colr-4 fs-18">portfolio@personalportfolio.com</p>
-                </div>
+                <a href="mailto:portfolio@personalportfolio.com" class="open-reg colr-4 fs-18 mail">
+                    <i class="fas fa-envelope p-right-15 colr-2"></i>
+                    <p>portfolio@personalportfolio.com</p>
+                </a>
                 <div class="web fs-20">
                     <i class="fas fa-globe p-right-15"></i>
                     <p class="open-reg colr-4 fs-18">www.portfoliopersonal.com</p>
@@ -698,6 +701,9 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/countdown.jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/custom.js"></script>
     <!--============ jQuery Scripts End ============-->
     

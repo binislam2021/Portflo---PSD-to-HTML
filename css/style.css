@@ -670,7 +670,7 @@ body{
     padding-left: 36px;
 }
 
-#portfolio .active{
+#portfolio .mixitup-control-active{
     color: #d6c6b2;
     padding-left: 36px;
 }
@@ -707,8 +707,9 @@ body{
 ====================== */
 #testimonial{
     height: 511px;
-    background: url(../images/testimonial-bg.jpg) no-repeat center / cover;
     position: relative;
+    /* background: url("..images/testimonial-bg.jpg"); */
+    /* background: transparent; */
     z-index: 1;
 }
 
@@ -1128,6 +1129,7 @@ body{
 
 #footer address{
     display: flex;
+    font-style: normal;
 }
 
 #footer .p-right-15{
