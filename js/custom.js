@@ -12,6 +12,7 @@ $(document).ready(function(){
     }
   });
 
+
   // type JS on the Banner
   var typed = new Typed('.pos-over', {
 
@@ -23,13 +24,16 @@ $(document).ready(function(){
     backDelay: 1000,
   });
 
+
   // wow JS
   new WOW().init();
+
 
     // Tilt JS in About
     $('.js-tilt').tilt({
       scale: 1.05
     });
+
 
     // Count Down js in wish
   $('#countdown').countdown({
@@ -41,31 +45,43 @@ $(document).ready(function(){
     second: 0,
   });
 
+
 // Slick Slider in Service
 $('.service-item').slick({
   slidesToShow: 3,
   autoplay: true,
-  prevArrow: '<i class="far fa-circle circle-left wowo animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-left arrow-left"></i></i>',
-  nextArrow: '<i class="far fa-circle circle-right wow animate__animated animate__fadeInUp"><i class="fas fa-long-arrow-alt-right arrow-right"></i></i>',
+  prevArrow: '<i class="far fa-circle circle-left wowo animate__animated animate__fadeInUp animate__slow"><i class="fas fa-long-arrow-alt-left arrow-left"></i></i>',
+  nextArrow: '<i class="far fa-circle circle-right wow animate__animated animate__fadeInUp animate__slow"><i class="fas fa-long-arrow-alt-right arrow-right"></i></i>',
 });
-
 
 
   // AOS js in portfolio
   AOS.init();
 
+
   // Mixit up in portfolio
   var mixer = mixitup('.port-images');
+
 
   // Add & Remove Class in Portfolio Part
   $('.mixitup-control-active').on('click', function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
 
+
   // Parallax bg js in testimonial
   $('#testimonial').parallax({imageSrc:'images/testimonial-bg.jpg'});
 
- 
+
+  // slick js in testimonial
+  $('#testimonial .testi-slider').slick({
+    slidesToShow: 2,
+    autoplay: true,
+    prevArrow: '<div class="testi-alter wow animate__animated animate__fadeInUp animate__slow"><div class="circle alter-left white"><i class="fas fa-long-arrow-alt-left fs-30"></i></div></div>',
+    
+    nextArrow: '<div class="testi-alter wow animate__animated animate__fadeInUp animate__slow"><div class="circle alter-right white"><i class="fas fa-long-arrow-alt-right fs-30"></i></div></div>',
+  });
+
 
 // Counter Up js in blog
   $('.counter').counterUp({

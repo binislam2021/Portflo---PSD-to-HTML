@@ -724,11 +724,11 @@ body{
 #testimonial .container{
     height: 100%;
 }
-#testimonial .testi-main{
+#testimonial .testi-slider{
     width: 100%;
     height: 225px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 #testimonial .testi-item{
@@ -736,6 +736,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 #testimonial .item-img{
@@ -752,6 +753,7 @@ body{
     height: 100%;
     width: 365px;
     line-height: 24px;
+    padding-left: 8px;
 }
 
 #testimonial h5{
@@ -771,27 +773,37 @@ body{
 }
 
 #testimonial .testi-alter{
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 #testimonial .circle{
-    margin: 0 10px;
     border: 1px solid #ffffff;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    position: relative;
+    position: absolute;
+    bottom: -80px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    position: relative;
     transition: all linear 0.4s;
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
+}
+
+#testimonial .alter-left{
+    position: absolute;
+    left: 545px;
+}
+
+#testimonial .alter-right{
+    position: absolute;
+    right: 545px;
 }
 
 #testimonial .circle:hover{
