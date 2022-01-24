@@ -708,8 +708,6 @@ body{
 #testimonial{
     height: 511px;
     position: relative;
-    /* background: url("..images/testimonial-bg.jpg"); */
-    /* background: transparent; */
     z-index: 1;
 }
 

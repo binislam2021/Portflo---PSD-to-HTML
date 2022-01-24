@@ -57,8 +57,15 @@ $('.service-item').slick({
   // Mixit up in portfolio
   var mixer = mixitup('.port-images');
 
+  // Add & Remove Class in Portfolio Part
+  $('.mixitup-control-active').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
   // Parallax bg js in testimonial
   $('#testimonial').parallax({imageSrc:'images/testimonial-bg.jpg'});
+
+ 
 
 // Counter Up js in blog
   $('.counter').counterUp({
@@ -66,9 +73,4 @@ $('.service-item').slick({
     time: 2000,
   });
 
-
-  // Add & Remove Class in Portfolio Part
-       $('.active').on('click', function(){
-         $(this).addClass('active').siblings().removeClass('active');
-       });
 });
