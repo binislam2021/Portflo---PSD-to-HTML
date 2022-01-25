@@ -46,6 +46,7 @@ $(document).ready(function(){
   });
 
 
+
 // Slick Slider in Service
 $('.service-item').slick({
   slidesToShow: 3,

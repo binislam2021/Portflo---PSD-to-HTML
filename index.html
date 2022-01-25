@@ -334,12 +334,17 @@
             </div>
             <div class="packages">
 
-                <div class="package-item text-center text-cap">
+                <div class="package-item text-center text-cap" onmouseover="document.getElementById('bg1').src='images/plan-bg-brand.png'" onmouseleave="document.getElementById('bg1').src='images/plan-bg-colr-4.png'">
                     <div class="plan-name open-bold fs-20 colr-2 text-cap bg-d">
                         <h4>free trial</h4>
                     </div>
                     <div class="plan-icon">
-                        <img src="images/free-plan.png" alt="Free Plan">
+                        <div class="plan-bg-colr-4">
+                            <img id="bg1" src="images/plan-bg-colr-4.png" alt="plan-bg-colr-4">
+                        </div>
+                        <div class="free-plan-icon">
+                            <img src="images/plan-free.png" alt="plan-free">
+                        </div>
                     </div>
                     <p class="open-bold fs-24"><span class="fs-60">&dollar;0</span>.00</p>
                     <div class="facilities open-reg fs-14 colr-4">
@@ -354,12 +359,17 @@
                     </div> 
                 </div>
 
-                <div class="package-item text-center text-cap">
+                <div class="package-item text-center text-cap" onmouseover="document.getElementById('bg2').src='images/plan-bg-brand.png'" onmouseleave="document.getElementById('bg2').src='images/plan-bg-colr-4.png'">
                     <div class="plan-name open-bold fs-20 colr-2 text-cap bg-d">
                         <h4>premium</h4>
                     </div>
                     <div class="plan-icon">
-                        <img src="images/premium-plan.png" alt="Premium Plan">
+                        <div class="plan-bg-colr-4">
+                            <img id="bg2" src="images/plan-bg-colr-4.png" alt="plan-bg-colr-4">
+                        </div>
+                        <div class="free-plan-icon">
+                            <img src="images/plan-premium.png" alt="plan-free">
+                        </div>
                     </div>
                     <p class="open-bold fs-24"><span class="fs-60">&dollar;10</span>.99</p>
                     <div class="facilities open-reg fs-14 colr-4">
@@ -374,12 +384,17 @@
                     </div> 
                 </div>
 
-                <div class="package-item text-center text-cap">
+                <div class="package-item text-center text-cap" onmouseover="document.getElementById('bg3').src='images/plan-bg-brand.png'" onmouseleave="document.getElementById('bg3').src='images/plan-bg-colr-4.png'">
                     <div class="plan-name open-bold fs-20 colr-2 text-cap bg-d">
                         <h4>standard</h4>
                     </div>
                     <div class="plan-icon">
-                        <img src="images/standard-plan.png" alt="Standard Plan">
+                        <div class="plan-bg-colr-4">
+                            <img id="bg3" src="images/plan-bg-colr-4.png" alt="plan-bg-colr-4">
+                        </div>
+                        <div class="free-plan-icon">
+                            <img src="images/plan-standard.png" alt="plan-free">
+                        </div>
                     </div>
                     <p class="open-bold fs-24"><span class="fs-60">&dollar;20</span>.99</p>
                     <div class="facilities open-reg fs-14 colr-4">
@@ -688,7 +703,7 @@
         <div class="footer-bottom bg-d">
             <div class="container text-center text-cap open-reg fs-14 colr-4">copyright 2022. all 
                 <span class="text-low"> rights reserved by
-                    <a href="https://www.facebook.com/binislam2021" class="colr-4 text-cap">muhammad ismail</a>
+                    <a href="https://www.facebook.com/binislam2021" target="_blank" class="colr-4 text-cap">muhammad ismail</a>
                 </span>
             </div>
         </div>
@@ -712,6 +727,8 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/custom.js"></script>
     <!--============ jQuery Scripts End ============-->
+
+
     
 </body>
 </html>

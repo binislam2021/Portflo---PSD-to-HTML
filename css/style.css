@@ -859,7 +859,7 @@ body{
 }
 
 #pricing .package-item:hover{
-    background: #d6c6b2;
+    background: #ecc99c;
 }
 
 #pricing .plan-name{
@@ -881,6 +881,18 @@ body{
     height: 82px;
     width: 74px;
     margin-top: 20px;
+    position: relative;
+}
+
+#pricing .plan-bg-brand{
+    position: absolute;
+    top: 0;
+}
+
+#pricing .free-plan-icon{
+    position: absolute;
+    top: -10px;
+    left: 20%;
 }
 
 #pricing .fs-24{
@@ -897,10 +909,6 @@ body{
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
-}
-
-#pricing .package-item:hover img{
-    box-shadow: 0 0 15px -5px;
 }
 
 #pricing .facilities p{
