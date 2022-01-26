@@ -10,6 +10,21 @@ $(document).ready(function(){
     }else{
       $('header').removeClass('nav-fixed');
     }
+
+    // Back to Top Fade (New)
+    if (scrolling > 500){
+      $('#back-to-top i').fadeIn();
+    }else{
+      $('#back-to-top i').fadeOut();
+    }
+
+  });
+
+  // Back to Top scroll on Click (New)
+  $('#back-to-top i').click(function(){
+    $('html, body').animate({
+      scrollTop: 0,
+    }, 1500);
   });
 
 
@@ -44,7 +59,6 @@ $(document).ready(function(){
     minute: 0,
     second: 0,
   });
-
 
 
 // Slick Slider in Service

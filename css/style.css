@@ -294,6 +294,41 @@ body{
 ====================== */
 
 
+/* ===========(New)===========
+    Back to Top Starts
+====================== */
+#back-to-top i{
+    position: fixed ;
+    right: 20px;
+    bottom: 55px;
+    font-size: 25px;
+    padding: 10px;
+    background: #e5e8ea;
+    border: 1px solid rgba(214, 198, 178, 0.7);
+    display: none;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 1px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#back-to-top i:hover{
+    background:#d6c6b2;
+    color: #e5e8ea;
+    cursor: pointer;
+}
+/* ======================
+    Back to Top Ends
+====================== */
+
 
 /* ======================
     About Starts
