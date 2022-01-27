@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  // Preloader
+  
   
   // Nav fixed after scrolling a way
   $(window).scroll(function(){
