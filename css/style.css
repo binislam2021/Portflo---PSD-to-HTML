@@ -190,8 +190,6 @@ body{
     -webkit-animation:;
     animation-direction: reverse;
     position: absolute;
-    /* top: 293px;
-    left: 650px; */
 }
 
 #preloader .circle3{
@@ -210,8 +208,6 @@ body{
     -webkit-animation: my-cstm-preloader 2s linear infinite;
     animation-direction: reverse;
     position: absolute;
-    /* top: 283px;
-    left: 640px; */
 }
 
 @keyframes my-cstm-preloader{
@@ -1349,6 +1345,7 @@ body{
     border: 1px solid #dddddd;
     outline: none;
     margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 #footer input:focus{
@@ -1359,6 +1356,7 @@ body{
     width: 100%;
     border: 1px solid #dddddd;
     outline: none;
+    padding-left: 10px;
 }
 
 #footer textarea:focus{
