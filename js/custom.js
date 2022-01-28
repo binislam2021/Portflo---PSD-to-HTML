@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
-  // Preloader
+  // preLoader
+  $(document).load(function(){
+    $("#preloader").delay(2000).fadeOut();
+});
+
+// $(document).load(function(){
+//   $("#preloader").fadeOut();
+// });
   
   
   // Nav fixed after scrolling a way
