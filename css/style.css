@@ -23,23 +23,6 @@ img{
     margin-bottom: 50px;
 }
 
-/* Font Family */
-.open-reg{
-    font-family: 'open-reg';
-}
-.open-semi{
-    font-family: 'open-semi';
-}
-.open-bold{
-    font-family: 'open-bold';
-}
-.open-italic{
-    font-family: 'open-italic';
-}
-.abril{
-    font-family: 'abril';
-}
-
 /* Typography */
 .text-cap{
     text-transform: capitalize;
@@ -137,6 +120,24 @@ body{
 @font-face {
     font-family: 'abril';
     src: url(../fonts/abril/AbrilFatface-Regular.ttf);
+}
+
+/* Font Family */
+.open-reg{
+    font-family: 'open-reg';
+}
+.open-semi{
+    font-family: 'open-semi';
+}
+.open-bold{
+    font-family: 'open-bold';
+}
+.open-italic{
+    font-family: 'open-italic';
+}
+.abril{
+    font-family: 'abril';
+    font-weight: 500;
 }
 /* ======================
     Font Import Ends
